@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* margin: 0;
+  padding: 0; */
+  background-color: hsl(230, 17%, 14%);
+}
+
+.container {
+  width: 80%;
+  height: 96vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(228, 12%, 44%);
+  background-image: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+.toprow {
+  display: flex;
+  gap: 10px;
+}
+
+.toprow > div {
+  background-color: hsl(228, 28%, 20%);
+  border-top: solid;
+  border-color: bisque;
+  width: 100%;
+  margin: 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  border-radius: 5px;
+}
+.cardheader,
+.up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(163, 72%, 41%);
+  font-weight: bold;
+}
+.down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(356, 69%, 56%);
+  font-weight: bold;
+}
+.up > p {
+  color: hsl(163, 72%, 41%);
+}
+.down > p {
+  color: hsl(356, 69%, 56%);
+}
+.Stats {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.bottomrow {
+  display: grid;
+  grid-template-areas:
+    "card1 card2 card3 card4"
+    "card5 card6 card7 card8";
+
+  grid-gap: 10px;
+  margin-top: 15px;
+}
+
+.bottomrow > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(228, 28%, 20%);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.card1 > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.stats > p {
+  font-size: 30px;
+  font-weight: 800;
+}
